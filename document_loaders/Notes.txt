@@ -1,0 +1,95 @@
+Correlation vs Covariance
+
+Both covariance and correlation measure the relationship between two
+variables, but they differ in interpretation and scale.
+
+Quick Comparison
+
+  ------------------------------------------------------------------------
+  Feature            Covariance                Correlation
+  ------------------ ------------------------- ---------------------------
+  Definition         Measures how two          Measures the strength and
+                     variables vary together.  direction of the linear
+                                               relationship.
+
+  Range              (-∞, +∞)                  [-1, 1]
+
+  Unit               Depends on variable units Unitless
+
+  Interpretation     Magnitude is difficult to Easy to interpret
+                     interpret                 
+
+  Formula            Cov(X,Y) =                r = Cov(X,Y)/(σxσy)
+                     Σ[(xi-x̄)(yi-ȳ)]/(n-1)     
+
+  Best Use           Statistical calculations  EDA, Feature Selection,
+                                               Machine Learning
+  ------------------------------------------------------------------------
+
+Covariance
+
+Covariance indicates whether two variables move together.
+
+-   Positive covariance (>0): Variables increase or decrease together.
+-   Negative covariance (<0): One variable increases while the other
+    decreases.
+-   Zero covariance (≈0): No linear relationship.
+
+Formula
+
+Cov(X,Y) = Σ[(xi-x̄)(yi-ȳ)] / (n-1)
+
+Limitation
+
+Covariance depends on the units of the variables, making its magnitude
+difficult to compare across datasets.
+
+Correlation
+
+Correlation is the standardized version of covariance.
+
+Formula
+
+r = Cov(X,Y) / (σxσy)
+
+Range:
+
+-   -1 : Perfect negative correlation
+-   0 : No linear correlation
+-   +1 : Perfect positive correlation
+
+Interpretation
+
+-   +0.8 to +1.0 : Strong positive relationship
+-   +0.5 to +0.8 : Moderate positive relationship
+-   0 : No linear relationship
+-   -0.5 to -0.8 : Moderate negative relationship
+-   -0.8 to -1.0 : Strong negative relationship
+
+Example
+
+Hours Studied and Marks generally have:
+
+-   Positive Covariance
+-   High Positive Correlation (close to +1)
+
+Why Correlation is Preferred in Machine Learning
+
+-   Independent of measurement units.
+-   Easy to compare different feature pairs.
+-   Used in correlation matrices and heatmaps.
+-   Helps identify redundant features during feature selection.
+
+Key Differences
+
+-   Covariance shows only the direction of a relationship.
+-   Correlation shows both the direction and the strength.
+-   Covariance is unbounded.
+-   Correlation always lies between -1 and +1.
+-   Covariance depends on units.
+-   Correlation is unitless.
+
+Interview Tip
+
+The sign of the correlation is always the same as the sign of the
+covariance because standard deviations are always positive.

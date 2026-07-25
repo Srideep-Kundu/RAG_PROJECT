@@ -1,0 +1,105 @@
+# ==========================
+# Core AI Framework
+# ==========================
+langchain
+langchain-core
+langchain-community
+langchain-text-splitters
+
+# ==========================
+# Model Providers
+# ==========================
+langchain-openai
+langchain-mistralai
+openai
+mistralai
+
+# ==========================
+# Embedding Models
+# ==========================
+sentence-transformers
+
+# ==========================
+# Vector Databases
+# ==========================
+chromadb
+faiss-cpu
+
+# ==========================
+# Document Loaders
+# ==========================
+pypdf
+pymupdf
+unstructured
+python-docx
+docx2txt
+beautifulsoup4
+lxml
+markdown
+
+# ==========================
+# Tokenization
+# ==========================
+tiktoken
+
+# ==========================
+# Environment Variables
+# ==========================
+python-dotenv
+
+# ==========================
+# Data Validation
+# ==========================
+pydantic
+
+# ==========================
+# HTTP Requests
+# ==========================
+httpx
+requests
+
+# ==========================
+# Utilities
+# ==========================
+numpy
+pandas
+tqdm
+
+# ==========================
+# Optional OCR
+# ==========================
+pytesseract
+Pillow
+
+# ==========================
+# Web Search (Optional)
+# ==========================
+duckduckgo-search
+
+# ==========================
+# FastAPI Backend (Optional)
+# ==========================
+fastapi
+uvicorn
+
+# ==========================
+# Frontend (Choose One)
+# ==========================
+streamlit
+# gradio
+
+# ==========================
+# Logging
+# ==========================
+rich
+
+# ==========================
+# Evaluation (Optional)
+# ==========================
+ragas
+datasets
+
+# ==========================
+# LangSmith (Optional)
+# ==========================
+langsmith
