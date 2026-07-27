@@ -36,6 +36,7 @@ docx2txt
 beautifulsoup4
 lxml
 markdown
+arxiv
 
 # ==========================
 # Tokenization
